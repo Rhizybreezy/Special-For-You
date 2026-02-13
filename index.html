@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
-             * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -37,7 +37,7 @@
             height: 100vh;
             background-image: url('photo.png'); /* ← YOUR PHOTO HERE */
             background-size: cover;
-            background-position: center 40%; /* Adjust vertical: 30% = more sky, 70% = more ground */
+            background-position: center 40%;
             background-repeat: no-repeat;
             background-attachment: fixed;
             z-index: -2;
@@ -51,11 +51,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.25); /* Adjust darkness: 0.15–0.35 */
+            background: rgba(0, 0, 0, 0.25);
             z-index: -1;
         }
         
-        /* Sections - transparent to show photo */
+        /* Sections */
         section {
             min-height: 100vh;
             display: flex;
@@ -66,16 +66,16 @@
             position: relative;
         }
         
-        /* White containers with transparency - photo shows through */
+        /* White containers with transparency */
         .container {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            background: rgba(255, 255, 255, 0.85); /* Adjust transparency: 0.8–0.95 */
+            background: rgba(255, 255, 255, 0.85);
             padding: 3rem;
             border-radius: 30px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(2px); /* Optional: removes if you want sharper text */
+            backdrop-filter: blur(2px);
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
         
@@ -507,7 +507,6 @@
 </div>
 
 <!-- MUSIC PLAYER - ED SHEERAN -->
-<!-- REPLACE 'ed-sheeran-perfect.mp3' WITH YOUR ACTUAL FILE NAME -->
 <div class="music-player">
     <div class="music-info">
         <span class="song-title">Perfect</span>
@@ -515,10 +514,8 @@
     </div>
     <button id="musicToggle" class="music-btn">▶️</button>
     <audio id="bgMusic" loop preload="auto">
-        <!-- ⚠️ IMPORTANT: Replace this with your actual file path -->
-        <source src="ed-sheeran-perfect.mp3" type="audio/mpeg">
-        <!-- Fallback: if file not found, try this path -->
-        <source src="music/ed-sheeran-perfect.mp3" type="audio/mpeg">
+        <source src="Ed_Sheeran_-_Perfect(128k).mp3" type="audio/mpeg">
+        <source src="music/Ed_Sheeran_-_Perfect(128k).mp3" type="audio/mpeg">
         Your browser doesn't support audio.
     </audio>
 </div>
@@ -526,7 +523,9 @@
 <!-- FLOATING HEARTS CONTAINER -->
 <div id="heart-container"></div>
 
-<!-- SECTION 1: HERO - 2022–2026 -->
+<!-- ============================================ -->
+<!-- SECTION 1: HERO - 2022–2026                 -->
+<!-- ============================================ -->
 <section id="hero">
     <div class="container">
         <span class="subhead">FOUR YEARS · 2022–2026</span>
@@ -543,15 +542,9 @@
     </div>
 </section>
 
-<style>
-    @keyframes gentleBounce {
-        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-        40% { transform: translateY(-10px); }
-        60% { transform: translateY(-5px); }
-    }
-</style>
-
-<!-- SECTION 2: OUR STORY - 2022 TO 2026 -->
+<!-- ============================================ -->
+<!-- SECTION 2: OUR STORY - 2022 TO 2026         -->
+<!-- ============================================ -->
 <section style="background: transparent;">
     <div class="container">
         <h2>2022 – 2026</h2>
@@ -565,7 +558,7 @@
                 <span class="memory-year">2022</span>
                 <div class="memory-content">
                     <div class="memory-title">The beginning</div>
-                    <div class="memory-desc">I still remember exactly what you were wearing. I pretended I wasn't nervous. I was. You smiled. Everything changed.</div>
+                    <div class="memory-desc">We met in tuition. We started talking. Then we never stopped. Late nights. Long walks home. That's where my heart quietly chose you.</div>
                 </div>
             </div>
             
@@ -574,7 +567,7 @@
                 <span class="memory-year">2023</span>
                 <div class="memory-content">
                     <div class="memory-title">One year</div>
-                    <div class="memory-desc">We celebrated with takeout and a movie. It wasn't fancy. It was perfect. I knew then I wanted many more.</div>
+                    <div class="memory-desc">School kept us busy. Distance tried to grow between us. But every school break, that long road brought us back together. And in those moments, nothing else mattered.</div>
                 </div>
             </div>
             
@@ -582,8 +575,8 @@
             <div class="memory-node">
                 <span class="memory-year">2024</span>
                 <div class="memory-content">
-                    <div class="memory-title">Our first trip</div>
-                    <div class="memory-desc">You fell asleep on the train, head on my shoulder. I didn't move for two hours. Best two hours of my life.</div>
+                    <div class="memory-title">Our First Chapter</div>
+                    <div class="memory-desc">We finished school. But we didn't finish us. We started enjoying life together, and somewhere along the way… love found its place in our hearts.</div>
                 </div>
             </div>
             
@@ -601,49 +594,74 @@
                 <span class="memory-year">2026</span>
                 <div class="memory-content">
                     <div class="memory-title">Right now</div>
-                    <div class="memory-desc">You're reading this. I'm somewhere close, heart racing. Four years later and I still get nervous. Still yours. Always.</div>
+                    <div class="memory-desc">2026 won't just be another year. It will be proof that we survived the hard days and still held hands. A year where love feels calmer, stronger, and more certain. Less fear. More understanding. Less doubt. More forever.</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SECTION 3: THE LETTER -->
+<!-- ============================================ -->
+<!-- SECTION 3: THE LETTER - FROM DERICK          -->
+<!-- ============================================ -->
 <section>
     <div class="container">
         <div class="letter-card">
             <div class="letter-text">
                 <p style="margin-bottom: 1.8rem;">
-                    My person,
+                    Kipenz changu,
                 </p>
                 <p style="margin-bottom: 1.8rem;">
-                    Four years ago, I didn't know you existed. Now I can't remember what my life was like before you.
+                    Sometimes I think about how everything started 😊.
                 </p>
                 <p style="margin-bottom: 1.8rem;">
-                    This isn't a proposal. This isn't a ring. This is just me, telling you what I should probably say more often:
+                    We met in tuition 📚. At first, it was just normal conversations. Then we started talking more… laughing more 😂. Staying up late at night 🌙, not wanting the calls to end 📱. I didn't know it then, but that's when my feelings for you really began ❤️.
                 </p>
                 <p style="margin-bottom: 1.8rem;">
-                    You are the best thing that ever happened to me.
+                    I used to take you home after tuition 🚶🏽‍♂️🚶🏽‍♀️. Those walks meant more to me than you probably knew. Being next to you felt right 🤍. Simple, but special ✨.
                 </p>
                 <p style="margin-bottom: 1.8rem;">
-                    Not because of the big moments—the trips, the anniversaries, the photo albums. But because of the small ones. The coffee I make you every morning. The way you laugh at your own jokes. The sound of your breathing when you fall asleep before me.
+                    There was a time when school kept us busy and we didn't see each other much 🏫. I remember missing you more than I expected 💭. But whenever we met again after school, we would walk that long road together. Just us. Talking, smiling 😊… sometimes stopping to hold each other a little longer 🤗💋. Those moments are still some of my favorites ❤️.
                 </p>
                 <p style="margin-bottom: 1.8rem;">
-                    Four years. And I want four more. And forty more. And all the years after that.
+                    Then we finished school 🎓.
                 </p>
                 <p style="margin-bottom: 1.8rem;">
-                    So here it is. The only question that matters.
+                    I thought maybe things would change. But instead, we grew closer 🌱. We started enjoying life together more. What began as friendship slowly became love 💞. Not something forced. Not something rushed. It just grew naturally between us 🌹.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    Now here we are ❤️.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    After everything — the good days ☀️, the hard days 🌧️, the growth — we're still here. And that means a lot to me.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    As we move into 2026 ✨, I don't ask for perfection. I just want us to keep choosing each other 🤍. To keep talking. Keep laughing 😂. Keep walking side by side like we always have 🚶🏽‍♂️❤️🚶🏽‍♀️.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    Thank you for being part of my life 🙏.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    Thank you for those small moments that became big memories 📖.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    Thank you for loving me ❤️.
+                </p>
+                <p style="margin-bottom: 1.8rem;">
+                    Happy Valentine's Day 💘.
                 </p>
             </div>
             <div class="signature">
-                Yours,<br>
-                [YOUR NAME]
+                Yours, always<br>
+                Derick 😎
             </div>
         </div>
     </div>
 </section>
 
-<!-- SECTION 4: US BY THE NUMBERS -->
+<!-- ============================================ -->
+<!-- SECTION 4: US BY THE NUMBERS                -->
+<!-- ============================================ -->
 <section style="background: transparent;">
     <div class="container">
         <h2>Four years, measured differently</h2>
@@ -666,13 +684,15 @@
             </div>
             <div class="number-item">
                 <div class="number-value">1</div>
-                <div class="number-label">Person</div>
+                <div class="number-label">Person I choose</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- SECTION 5: THE QUESTION -->
+<!-- ============================================ -->
+<!-- SECTION 5: THE QUESTION                     -->
+<!-- ============================================ -->
 <section>
     <div class="container">
         <h2 style="margin-bottom: 1rem;">I've been meaning to ask you something</h2>
@@ -710,7 +730,9 @@
     </div>
 </section>
 
-<!-- SECTION 6: THE ANSWER -->
+<!-- ============================================ -->
+<!-- SECTION 6: THE ANSWER - SHE SAID YES!       -->
+<!-- ============================================ -->
 <section style="background: transparent; display: none;" id="answerSection">
     <div class="container">
         <div style="font-size: 4rem; margin-bottom: 1rem; color: #B76E6E; animation: gentlePulse 2s infinite;">
@@ -722,23 +744,33 @@
         </p>
         
         <div class="celebration-message">
-            <p style="font-size: 1.2rem; color: #5C5C5C; line-height: 1.8;">
-                "Yes. Always."<br><br>
-                Four years. And now we have all the rest.<br>
-                No ring. No wedding. Just us. Just everything we already are.
+            <p style="font-size: 1.3rem; color: #9C6B6B; font-family: 'Cormorant Garamond', serif; margin-bottom: 1.5rem;">
+                "Yes. Always."
             </p>
-            <div style="margin: 2rem 0 1rem;">
+            <p style="font-size: 1.1rem; color: #5C5C5C; line-height: 1.8;">
+                Four years of walking that long road together 🚶🏽‍♂️❤️🚶🏽‍♀️<br>
+                Four years of late night calls, laughter, and growing up side by side 📱😂<br>
+                Four years of choosing each other — even when it wasn't easy 🤍<br><br>
+                <strong style="color: #B76E6E;">And now? Now we have all the rest.</strong><br><br>
+                <br>
+                Nakupenda so much mamaa ❤️
+            </p>
+            <div style="margin: 2.5rem 0 1.5rem;">
                 <span style="font-size: 2rem;">❤</span>
                 <span style="font-size: 2rem; margin: 0 0.5rem;">❤</span>
                 <span style="font-size: 2rem;">❤</span>
             </div>
-            <p style="color: #B76E6E; font-style: italic;">
-                Here's to year five. And all the rest.
+            <p style="color: #B76E6E; font-style: italic; font-size: 1.2rem;">
+                Here's to year five. And all the rest.<br>
+                — Derick
             </p>
         </div>
     </div>
 </section>
 
+<!-- ============================================ -->
+<!-- FOOTER                                      -->
+<!-- ============================================ -->
 <footer>
     ❤ 2022 – 2026 · Four years of you · Forever to go
 </footer>
@@ -763,29 +795,19 @@
     const toggleBtn = document.getElementById('musicToggle');
     let isPlaying = false;
     
-    // IMPORTANT: Set the correct path to your Ed Sheeran file
-    // OPTION 1: If file is in same folder as this HTML
-    music.src = 'Ed_Sheeran_-_Perfect(128k).mp3'; // ← CHANGE THIS
-    
-    // OPTION 2: If file is in a "music" folder
-    // music.src = 'music/ed-sheeran-perfect.mp3'; // ← UNCOMMENT AND USE THIS
-    
-    // OPTION 3: If file has different name
-    // music.src = 'perfect.mp3'; // ← CHANGE TO YOUR FILENAME
+    music.src = 'Ed_Sheeran_-_Perfect(128k).mp3';
     
     toggleBtn.addEventListener('click', function() {
         if (isPlaying) {
             music.pause();
             toggleBtn.textContent = '▶️';
         } else {
-            // Try to play and handle autoplay restrictions
             music.play().then(() => {
                 toggleBtn.textContent = '⏸️';
             }).catch(error => {
                 console.log('Playback failed:', error);
                 alert('Click anywhere on the page to enable music.');
                 
-                // One-click fallback
                 document.body.addEventListener('click', function enablePlay() {
                     music.play();
                     toggleBtn.textContent = '⏸️';
@@ -796,13 +818,8 @@
         isPlaying = !isPlaying;
     });
     
-    // Auto-play attempt when page loads (may be blocked by browser)
     document.addEventListener('DOMContentLoaded', function() {
-        // Try to autoplay (browsers may block)
-        music.volume = 0.5; // 50% volume
-        
-        // Uncomment next line if you want it to try autoplaying
-        // music.play().then(() => { isPlaying = true; toggleBtn.textContent = '⏸️'; }).catch(() => {});
+        music.volume = 0.5;
     });
 
     // ============================================
@@ -858,17 +875,14 @@
     yesButton.addEventListener('click', function(e) {
         e.preventDefault();
         
-        // Hide question
         commitmentQuestion.classList.remove('visible');
         setTimeout(() => {
             commitmentQuestion.style.display = 'none';
         }, 500);
         
-        // Show answer section
         answerSection.style.display = 'flex';
         answerSection.scrollIntoView({ behavior: 'smooth' });
         
-        // Celebration hearts - BURST
         for (let i = 0; i < 80; i++) {
             setTimeout(() => {
                 const celebrationHeart = document.createElement('div');
@@ -885,7 +899,6 @@
             }, i * 20);
         }
         
-        // Play music if not already playing (optional)
         if (!isPlaying) {
             music.play();
             isPlaying = true;
@@ -898,11 +911,9 @@
     // ============================================
     noButton.addEventListener('click', function() {
         const messages = [
-            "Take your time. I'll be here.",
-            "No pressure. Just know my answer will always be yes.",
-            "Think as long as you need. I'm not going anywhere.",
-            "That's okay. I'll ask again tomorrow.",
-            "Four years. I can wait a little longer."
+            "Are you sure babe?",
+            "Usinifanyie ivoo babe.",
+            "Think again babe."
         ];
         alert(messages[Math.floor(Math.random() * messages.length)]);
     });
@@ -918,7 +929,6 @@
         keystrokes = keystrokes.slice(-4);
         
         if (keystrokes.join('') === secret) {
-            // Secret heart burst
             for (let i = 0; i < 40; i++) {
                 setTimeout(() => {
                     const secretHeart = document.createElement('div');
